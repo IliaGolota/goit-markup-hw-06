@@ -531,6 +531,69 @@ body {
   margin-bottom: 9px;
 }
 
+.third-row {
+  margin-left: 93px;
+}
+
+.input-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: var(--hero-footer-color);
+  padding: 15px 16px;
+}
+
+.input-email::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.first-submit {
+  padding-left: 28px;
+  display: flex;
+  /* justify-content: space-evenly;*/
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 12px;
+  border: none;
+  letter-spacing: 0.06em;
+}
+
+.white-check {
+  margin-left: 10px;
+}
+/*
+.first-submit::after {
+  padding-left: 10px;
+  content: " ";
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z' fill='%23fff'/%3E%3C/svg%3E");
+  
+}*/
+
+.form-first {
+  display: flex;
+}
+
 /*second page links "Portfolio"*/
 .portfolio {
   position: relative;
@@ -757,13 +820,121 @@ body {
 .modal {
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 8px;
+  padding-top: 8px;
+  padding-right: 8px;
+  /* padding-left: 48px;*/
   width: 528px;
   height: 581px;
   background-color: #fff;
+}
+
+.modal-button {
+  margin-left: 482px;
+}
+
+form {
+  padding-left: 48px;
+}
+
+.input,
+.textarea {
+  padding: 8px;
+  font-family: inherit;
+  font-size: inherit;
   display: flex;
-  justify-content: end;
-  align-items: start;
+  flex-direction: column;
+  width: 448px;
+}
+
+.input {
+  height: 45px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 40px;
+  fill: var(--primary-text-color);
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  fill: currentColor;
+}
+/*
+.black {
+  fill: currentColor;
+}*/
+
+.textarea {
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.textarea::placeholder {
+  color: rgba(33, 33, 33, 0.2);
+}
+
+.label-input {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.label-checkbox {
+  padding-left: 7px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.checkbox-box {
+  display: flex;
+}
+
+.form-header {
+  margin-bottom: 12px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.terms {
+  color: var(--accent-color);
+  padding-left: 3px;
+}
+
+.subfield {
+  position: relative;
+  color: var(--primary-text-color);
+}
+
+.subfield:hover,
+.subfield:focus {
+  color: var(--accent-color);
+}
+
+.textarea:hover,
+.textarea:focus {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
 }
 
 /*Overlay*/
@@ -809,6 +980,7 @@ body {
   border: none;
   background-color: #fff;
   padding: 0;
+  cursor: pointer;
 }
 
 .cross {
