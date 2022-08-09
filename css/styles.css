@@ -516,6 +516,7 @@ body {
 
 .first-row {
   margin-right: 70px;
+  width: 231px;
 }
 
 .join {
@@ -785,6 +786,10 @@ body {
   margin-right: 10px;
 }
 
+.white-item:last-child {
+  margin-right: 0;
+}
+
 .join {
   margin-bottom: 20px;
 }
@@ -821,20 +826,19 @@ body {
 .modal {
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 8px;
-  padding-right: 8px;
-  /* padding-left: 48px;*/
   width: 528px;
   height: 581px;
   background-color: #fff;
+  padding: 40px 32px 40px 48px;
 }
 
 .modal-button {
-  margin-left: 482px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
 }
 
 .form {
-  padding-left: 48px;
 }
 
 .input,
@@ -848,6 +852,7 @@ body {
 }
 
 .input {
+  margin-bottom: 10px;
   height: 45px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -863,12 +868,18 @@ body {
   cursor: pointer;
 }
 
+.input:hover + .icon,
+.input:focus + .icon {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .label-input {
   position: relative;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -879,7 +890,7 @@ body {
   position: absolute;
   top: 15px;
   left: 15px;
-  fill: currentColor;
+  fill: #212121;
 }
 
 .textarea {
@@ -906,6 +917,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 12px;
 }
 
 .terms {
